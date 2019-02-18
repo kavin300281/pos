@@ -3,14 +3,14 @@
 
 int main()
 {
-    int i,j;
+    int  long i,j;
     char temp;
-    scanf("%d %c %d",&i,&temp,&j);
+    scanf("%ld %c %ld",&i,&temp,&j);
     
     if(temp=='/')
-    printf("%d ",i/j);
+    printf("%ld ",i/j);
     else
-    printf("%d",i%j);
+    printf("%ld",i%j);
     
     
     return 0;
