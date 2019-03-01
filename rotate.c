@@ -11,12 +11,12 @@ int main()
      m++;   
     }
     
-    for(i=n;i<m;i++)
+    for(i=m-n;i<m;i++)
     {
         
         printf("%c",a[i]);
     }
-    for(i=0;i<n;i++)
+    for(i=0;i<m-n;i++)
     {
         if(i<m)
         printf("%c",a[i]);
