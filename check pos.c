@@ -8,7 +8,11 @@ int main()
     for(i=0;a[i]!='\0';i++)
     {
         if(b[0]==a[i])
+        {
         printf("%d",i+1);
+            break;
+        }
+        
     }
 
     return 0;
