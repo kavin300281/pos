@@ -3,7 +3,7 @@
 int main()
 {
 char a[100][100];
-int n,m,i,j,c=0,l,l1;
+int n,m=0,i,j,c=0,l,l1;
 scanf("%d",&n);
 for(i=0;i<n;i++)
 scanf("%s",&a[i]);
@@ -20,12 +20,15 @@ for(i=0;i<n;i++)
                 c++;
             }
         }
+        if(c==l)
+            m++;
+        c=0;
     }
     
 }
-if(c>0)
+if(m>0)
 printf("yes");
-if(c==0)
+if(m==0)
 printf("no");
 
     return 0;
