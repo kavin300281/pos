@@ -1,21 +1,28 @@
-#include<stdio.h>
+#include <stdio.h>
+
 int main()
 {
-    int n,dec=0,b=1,rem,m=2;
-    scanf("%d",&n);
-    while(n)
-    {
-        rem=n%10;
-        dec=dec+rem*b;
-        n=n/10;
-        b=b*2;
-    }
-    while(dec>m)
-    {
-        m=m*2;
-    }
-    if(dec<m)
-    {
-        printf("%d",m);
-    }
+int a,b=1,c,rem,s=0,l=0,m=1,r;
+scanf("%d",&a);
+
+while(a)
+{
+   rem=a%10;
+   s=s+rem*b;
+   b=b*2;
+   
+   
+   a=a/10;
+   
+   
+   
+}
+
+while(s>m)
+{
+    m=m*2;
+}
+   printf("%d",m); 
+
+    return 0;
 }
